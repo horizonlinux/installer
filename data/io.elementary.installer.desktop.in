@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Install Pop!_OS
+Name=Install Horizon
 Comment=Install the system
 Exec=pkexec io.elementary.installer
-Icon=system-os-installer
+Icon=horizon-installer
 Terminal=false
 Type=Application
 StartupNotify=true

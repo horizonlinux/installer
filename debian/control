@@ -1,6 +1,6 @@
-Source: pop-installer
+Source: horizon-installer
 Section: utils
-Maintainer: Jeremy Soller <jeremy@system76.com>
+Maintainer: Microwave <micro.mail88@gmail.com>
 Build-Depends: debhelper (>= 9),
                desktop-file-utils,
                gettext,
@@ -16,26 +16,19 @@ Build-Depends: debhelper (>= 9),
                meson,
                valac (>= 0.26)
 Standards-Version: 3.9.6
-Homepage: https://github.com/pop-os/installer
+Homepage: https://github.com/horizonlinux/installer
 
-Package: pop-installer
+Package: horizon-installer
 Architecture: linux-any
 Priority: extra
 Depends: gparted, distinst-v2, ${misc:Depends}, ${shlibs:Depends}
-Recommends: pop-installer-session
+Recommends: horizon-installer-session
 Description: Distribution installer
  Installs distros with ease, all installs are treated as OEM.
 
-Package: pop-installer-session
+Package: horizon-installer-session
 Architecture: linux-any
 Priority: extra
-Depends: pop-installer
+Depends: horizon-installer
 Description: Dedicated installer session
- Launches pop-installer in a dedicated session.
-
-Package: pop-installer-casper
-Architecture: linux-any
-Priority: extra
-Depends: casper
-Description: Autostart pop-installer in casper
- Autostart pop-installer when running in a live system with casper
+ Launches horizon-installer in a dedicated session.
