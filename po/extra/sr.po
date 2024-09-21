@@ -8,7 +8,7 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #: data/io.elementary.installer.desktop.in:3
-msgid "Install Pop!_OS"
+msgid "Install Horizon"
 msgstr ""
 
 #: data/io.elementary.installer.desktop.in:4

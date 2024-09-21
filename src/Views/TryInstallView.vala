@@ -91,32 +91,28 @@ public class Installer.TryInstallView : AbstractInstallerView {
         next_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         next_button.sensitive = false;
 
-        var demo_button = new Gtk.Button.with_label (_("Try Demo Mode"));
-        demo_button.clicked.connect (Utils.demo_mode);
+
 
         var button_creator = new InstallButtonFactory (next_button, type_grid);
         string pretty_name = Utils.get_pretty_name ();
 
         var clean_install_button = button_creator.new_button (
             _("Clean Install"),
-            "system-os-installer",
+            "gparted",
             _("Erase everything and install a fresh copy of %s.").printf (pretty_name),
             () => next_step ()
         );
 
         var custom_button = button_creator.new_button (
-            _("Custom (Advanced)"),
-            "disk-utility",
+            _("Custom Install"),
+            "gnome-text-editor",
             _("Create, resize, or otherwise manage partitions manually. This method may lead to data loss."),
             () => custom_step ()
         );
 
         action_area.add (back_button);
         action_area.add (next_button);
-        action_area.add (demo_button);
         action_area.homogeneous = false;
-        action_area.set_child_secondary (demo_button, true);
-        action_area.set_child_non_homogeneous (demo_button, true);
 
         var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.BOTH);
         sizegroup.add_widget (clean_install_button.type_image);
@@ -145,7 +141,6 @@ public class Installer.TryInstallView : AbstractInstallerView {
         type_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         type_grid.add (custom_button);
 
-        demo_button.key_press_event.connect ((event) => handle_key_press (demo_button, event));
         clean_install_button.key_press_event.connect ((event) => handle_key_press (clean_install_button, event));
 
         custom_button.key_press_event.connect ((event) => handle_key_press (custom_button, event));

@@ -19,8 +19,8 @@ msgstr ""
 "X-Generator: Launchpad (build 18204)\n"
 
 #: data/io.elementary.installer.desktop.in:3
-msgid "Install Pop!_OS"
-msgstr "安装 Pop!_OS"
+msgid "Install Horizon"
+msgstr "安装 Horizon"
 
 #: data/io.elementary.installer.desktop.in:4
 msgid "Install the system"

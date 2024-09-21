@@ -160,18 +160,17 @@ public class EncryptView : AbstractInstallerView {
 
         encrypt_button = new Gtk.Button.with_label (_("Encrypt")) {
             sensitive = false,
-            can_default = true
+            can_default = false
         };
-        encrypt_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        no_encrypt_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-        set_password_button = new Gtk.Button.with_label (_("Set Password")) { can_default = true };
-        set_password_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        set_password_button = new Gtk.Button.with_label (_("Set Password")) { can_default = false };
         set_password_button.grab_focus ();
 
-        action_area.add (no_encrypt_button);
+        action_area.add (encrypt_button);
         action_area.add (back_button);
         action_area.add (set_password_button);
-        action_area.add (encrypt_button);
+        action_area.add (no_encrypt_button);
 
         no_encrypt_button.clicked.connect (() => {
             Configuration.get_default ().encryption_password = null;

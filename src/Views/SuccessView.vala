@@ -92,7 +92,7 @@ public class SuccessView : AbstractInstallerView {
     }
 
     static bool requires_workaround () {
-        if (Utils.get_version_id () == "18.04") {
+        if (Utils.get_version_id () == "24.04") {
             string product_model = product_model ();
             return product_model == "darp6" || product_model == "galp4" || product_model == "lemp9";
         }

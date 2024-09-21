@@ -19,7 +19,7 @@ msgstr ""
 #: src/MainWindow.vala:44 src/Views/TryInstallView.vala:93
 #, fuzzy, c-format
 msgid "Install %s"
-msgstr "تثبيت"
+msgstr "%s تثبيت"
 
 #: src/Utils.vala:31
 msgid "Operating System"
