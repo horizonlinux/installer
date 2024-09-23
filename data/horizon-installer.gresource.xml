@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/horizon-installer">
+    <file alias="application.css" compressed="true">application.css</file>
+    <file alias="disk-bar-fallback.css" compressed="true">disk-bar-fallback.css</file>
+
+    <file alias="catastrophic-error.png">images/initial-setup_catastrophic-error_full.png</file>
+
+    <file alias="drive-selection.png">images/initial-setup_drive-selection_full.png</file>
+
+    <file alias="issue-detection.png">images/initial-setup_basic-error_full.png</file>
+
+    <file alias="keyboard.png">images/initial-setup_keyboard_full.png</file>
+
+    <file alias="progress.png">images/initial-setup_progress_full.png</file>
+
+    <file alias="success.png">images/initial-setup_success_full.png</file>
+
+    <file alias="encryption.png">images/initial-setup_encryption_full.png</file>
+
+    <file alias="language.png">images/initial-setup_language_full.png</file>
+
+    <file alias="try-install.png">images/initial-setup_try-install_full.png</file>
+
+    <file alias="create-account.png">images/initial-setup_create_account.png</file>
+  </gresource>
+</gresources>

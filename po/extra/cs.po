@@ -6,14 +6,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: data/io.elementary.installer.desktop.in:3
+#: data/horizon-installer.desktop.in:3
 msgid "Install Horizon"
 msgstr ""
 
-#: data/io.elementary.installer.desktop.in:4
+#: data/horizon-installer.desktop.in:4
 msgid "Install the system"
 msgstr ""
 
-#: data/io.elementary.installer.desktop.in:6
+#: data/horizon-installer.desktop.in:6
 msgid "system-os-installer"
 msgstr ""

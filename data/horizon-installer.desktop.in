@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Install Horizon
+Comment=Install the system
+Exec=pkexec horizon-installer
+Icon=horizon-installer
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;System;
+X-GNOME-Autostart-Delay=3

@@ -29,7 +29,7 @@ public class Installer.App : Gtk.Application {
     private static Installer.App instance = null;
 
     construct {
-        application_id = "io.elementary.installer";
+        application_id = "horizon-installer";
         flags = ApplicationFlags.FLAGS_NONE;
         Intl.setlocale (LocaleCategory.ALL, "");
         add_main_option_entries (INSTALLER_OPTIONS);
@@ -57,11 +57,11 @@ public class Installer.App : Gtk.Application {
         this.add_window (window);
 
         var css_provider = new Gtk.CssProvider ();
-        css_provider.load_from_resource ("io/elementary/installer/application.css");
+        css_provider.load_from_resource ("horizon-installer/application.css");
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var css_fallback = new Gtk.CssProvider ();
-        css_fallback.load_from_resource ("io/elementary/installer/disk-bar-fallback.css");
+        css_fallback.load_from_resource ("horizon-installer/disk-bar-fallback.css");
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), css_fallback, Gtk.STYLE_PROVIDER_PRIORITY_THEME);
 
         Inhibitor.get_instance ().inhibit ();

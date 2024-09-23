@@ -29,16 +29,16 @@ Run `meson build` to configure the build environment. Change to the build direct
     cd build
     ninja test
 
-To install, use `ninja install`, then execute with `io.elementary.installer`. Note that listing drives and actually installing requires root.
+To install, use `ninja install`, then execute with `horizon-installer`. Note that listing drives and actually installing requires root.
 
     sudo ninja install
-    io.elementary.installer
+    horizon-installer
 
 You can also use `--test` mode for development to disable destructive behaviors like installing, restarting, and shutting down:
 
-    io.elementary.installer --test
+    horizon-installer --test
 
 For debug messages, set the `G_MESSAGES_DEBUG` environment variable, e.g. to `all`:
 
-    G_MESSAGES_DEBUG=all io.elementary.installer
+    G_MESSAGES_DEBUG=all horizon-installer
 

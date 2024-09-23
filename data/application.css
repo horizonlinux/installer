@@ -45,44 +45,152 @@ buttonbox {
 }
 
 .disks {
-    background-image: url("resource:///io/elementary/installer/drive-selection.png");
+    background-image: url("resource:///horizon-installer/drive-selection.png");
+}
+
+@keyframes language {
+  0% {
+    background-image: url("resource:///horizon-installer/language.png"),
+                      url("resource:///horizon-installer/language.png");
+  }
+  50% {
+    background-image: url("resource:///horizon-installer/language.png"),
+                      url("resource:///horizon-installer/language.png");
+  }
+  100% {
+    background-image: url("resource:///horizon-installer/language.png"),
+                      url("resource:///horizon-installer/language.png");
+  }
 }
 
 .language {
-    background-image: url("resource:///io/elementary/installer/language.png");
+    background-image: url("resource:///horizon-installer/language.png"),
+                      url("resource:///horizon-installer/language.png");
+    animation: language 800ms ease infinite forwards;
+}
+
+@keyframes keyboard {
+  0% {
+    background-image: url("resource:///horizon-installer/keyboard.png"),
+                      url("resource:///horizon-installer/keyboard.png");
+  }
+  50% {
+    background-image: url("resource:///horizon-installer/keyboard.png"),
+                      url("resource:///horizon-installer/keyboard.png");
+  }
+  100% {
+    background-image: url("resource:///horizon-installer/keyboard.png"),
+                      url("resource:///horizon-installer/keyboard.png");
+  }
 }
 
 .keyboard {
-    background-image: url("resource:///io/elementary/installer/keyboard.png");
+    background-image: url("resource:///horizon-installer/keyboard.png");
+    animation: keyboard 1s ease infinite alternate;
 }
 
+@keyframes encrypt {
+  0% {
+    background-image: url("resource:///horizon-installer/encryption.png"),
+                      url("resource:///horizon-installer/encryption.png");
+  }
+  50% {
+    background-image: url("resource:///horizon-installer/encryption.png"),
+                      url("resource:///horizon-installer/encryption.png");
+  }
+  100% {
+    background-image: url("resource:///horizon-installer/encryption.png"),
+                      url("resource:///horizon-installer/encryption.png");
+  }
+}
 
 .encrypt {
-  background-image: url("resource:///io/elementary/installer/encryption.png");
-
+  background-image: url("resource:///horizon-installer/encryption.png"),
+                    url("resource:///horizon-installer/encryption.png");
+    animation: encrypt 600ms ease infinite alternate;
 }
 
+@keyframes issue {
+  from {
+    background-image: url("resource:///horizon-installer/issue-detection.png"),
+                      url("resource:///horizon-installer/issue-detection.png");
+  }
+  to {
+    background-image: url("resource:///horizon-installer/issue-detection.png"),
+                      url("resource:///horizon-installer/issue-detection.png");
+  }
+}
 
 .issue {
-    background-image: url("resource:///io/elementary/installer/issue-detection.png");
+    background-image: url("resource:///horizon-installer/issue-detection.png"),
+                      url("resource:///horizon-installer/issue-detection.png");
+    animation: issue 500ms ease-in-out infinite alternate;
 }
 
 .error {
-    background-image: url("resource:///io/elementary/installer/catastrophic-error.png");
+    background-image: url("resource:///horizon-installer/catastrophic-error.png");
+}
+
+@keyframes try {
+  0% {
+    background-image: url("resource:///horizon-installer/try-install.png"),
+                      url("resource:///horizon-installer/try-install.png");
+  }
+  33% {
+    background-image: url("resource:///horizon-installer/try-install.png"),
+                      url("resource:///horizon-installer/try-install.png");
+  }
+  66% {
+    background-image: url("resource:///horizon-installer/try-install.png"),
+                      url("resource:///horizon-installer/try-install.png");
+  }
+  100% {
+    background-image: url("resource:///horizon-installer/try-install.png"),
+                      url("resource:///horizon-installer/try-install.png");
+  }
 }
 
 .try-install {
-    background-image: url("resource:///io/elementary/installer/try-install.png");
+    background-image: url("resource:///horizon-installer/try-install.png"),
+                      url("resource:///horizon-installer/try-install.png");
+    animation: try 3s ease infinite forwards;
+}
+
+@keyframes progress {
+  from {
+    background-image: url("resource:///horizon-installer/progress.png"),
+                      url("resource:///horizon-installer/progress.png");
+  }
+  to {
+    background-image: url("resource:///horizon-installer/progress.png"),
+                      url("resource:///horizon-installer/progress.png");
+  }
 }
 
 .progress {
-    background-image: url("resource:///io/elementary/installer/progress.png");
+    background-image: url("resource:///horizon-installer/progress.png"),
+                      url("resource:///horizon-installer/progress.png");
+
+    animation: progress 300ms ease infinite alternate;
+}
+
+@keyframes success {
+  from {
+    background-image: url("resource:///horizon-installer/success.png"),
+                      url("resource:///horizon-installer/success.png");
+  }
+  to {
+    background-image: url("resource:///horizon-installer/success.png"),
+                      url("resource:///horizon-installer/success.png");
+  }
 }
 
 .success {
-    background-image: url("resource:///io/elementary/installer/success.png");
+    background-image: url("resource:///horizon-installer/success.png"),
+                      url("resource:///horizon-installer/success.png");
+    animation: success 450ms ease infinite alternate;
 }
 
 .create-account {
-  background-image: url("resource:///io/elementary/installer/create-account.png");
+  background-image: url("resource:///horizon-installer/create-account.png");
 }

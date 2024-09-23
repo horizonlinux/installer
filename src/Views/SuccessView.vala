@@ -33,7 +33,7 @@ public class SuccessView : AbstractInstallerView {
         artwork.get_style_context ().add_class ("artwork");
         artwork.vexpand = true;
 
-        var title_label = new Gtk.Label (_("Continue Setting Up"));
+        var title_label = new Gtk.Label (_("All Set! Enjoy Horizon Fitz Roy."));
         title_label.halign = Gtk.Align.CENTER;
         title_label.max_width_chars = 30;
         title_label.valign = Gtk.Align.START;

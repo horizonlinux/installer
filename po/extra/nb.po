@@ -13,15 +13,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.16\n"
 
-#: data/io.elementary.installer.desktop.in:3
+#: data/horizon-installer.desktop.in:3
 msgid "Install Horizon"
 msgstr "Installer Horizon"
 
-#: data/io.elementary.installer.desktop.in:4
+#: data/horizon-installer.desktop.in:4
 msgid "Install the system"
 msgstr "Installer systemet"
 
-#: data/io.elementary.installer.desktop.in:6
+#: data/horizon-installer.desktop.in:6
 #, fuzzy
 msgid "system-os-installer"
 msgstr "system-os-installer"
